@@ -1,0 +1,10 @@
+disk 2 {
+    table gpt
+
+    partition partition1 {
+        size rest
+        format exfat
+        label "test"
+    }
+}
+
