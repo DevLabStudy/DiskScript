@@ -1,0 +1,18 @@
+# Pendrive: mała partycja FAT32 + reszta exFAT
+disk 2 {
+    table gpt
+
+    partition instalator {
+        size 16GB
+        format fat32
+        label "INSTALATOR"
+        letter F
+    }
+
+    partition wymienny {
+        size rest
+        format exfat
+        label "Wymienny"
+        letter G
+    }
+}

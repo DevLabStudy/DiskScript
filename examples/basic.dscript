@@ -1,0 +1,11 @@
+# Jeden dysk, jedna partycja na całość
+disk 1 {
+    table gpt
+
+    partition dane {
+        size rest
+        format ntfs
+        label "Dane"
+        letter E
+    }
+}

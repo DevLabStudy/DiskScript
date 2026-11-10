@@ -1,0 +1,12 @@
+disk 2 {
+    partition a {
+        size 40GB
+        format fat32
+        letter E
+    }
+    partition b {
+        size rest
+        format ntfs
+        letter E
+    }
+}
